@@ -1,15 +1,34 @@
+var questions = 
+[
+  {
+    question: "What is a coders best friend?",
+    choices: ["Google", "A Dictionary", "NaN", "A Liberian"],
+    answer: 0
+  },
+
+  {
+    question: "What does CSS stand for?",
+    choices: ["Counter Strike Source","Cascading Style Sheets","California Superbike School","Customer Satisfaction Survey"],
+    answer: 1
+  },
+
+  {
+    question: "What is an array?",
+    choices: ["A government code","Something used solely in CSS","A special variable, which can hold more than one value","It's just a fancy word"],
+    answer: 2
+  },
+
+  {
+    question: "How can you select an element that already exists in a DOM?",
+    choices: ["querySelector","getElementById","querySelectorAll","addEventListener"],
+    answer: 1
+  
+  },
+
+]
+
 var timerEl= document.getElementById("countdown");
 var mainEl= document.getElementById("main");
-
-
-document.getElementById("myBtn").addEventListener("click",function (event) {
-  document.querySelector("h2").innerText="The Quiz Has Begun!!!"
-});
-
-document.getElementById("myBtn").addEventListener("click",function (event) {
-  document.querySelector("button").innerText="Continue"
-});
-
 
 function countdown(){
     
@@ -46,6 +65,14 @@ countdown();
 
 
 
+document.getElementById("myBtn").addEventListener("click",function (event) {
+  document.querySelector("h2").innerText="The Quiz Has Begun!!!"
+});
+
+document.getElementById("myBtn").addEventListener("click",function (event) {
+  document.querySelector("button").innerText="Continue"
+  
+});
 
 
 
@@ -55,13 +82,4 @@ countdown();
 
 
 
-/*var myQuestions = [
-  {
-    question: "What is a coders best friend when he/she needs to find help or answers?",
-    answer: {
-      a: "Google",
-      b: "Webster's Dictionary",
-      c: "NaN"
-    },
-    correctAnswer:"a"
-}]*/
+
